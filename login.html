@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>IT Asset Management System — Sign In</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- Page background image (covers both columns) -->
   <div class="bg">
-    <img src="phoenix.png" alt="" aria-hidden="true">
+    <img src="Images/login_background.png" alt="" aria-hidden="true">
   </div>
 
   <main class="layout">
@@ -21,7 +21,7 @@
       <section class="rail-body">
         <h1 id="signin-title" class="rail-title">Sign In</h1>
 
-        <form class="form" action="/login" method="post" novalidate>
+        <form class="form" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
           <label class="field">
             <span>Username</span>
             <input type="text" name="username" autocomplete="username"
@@ -37,6 +37,23 @@
           </label>
 
           <button class="btn" type="submit" aria-label="Sign in to ITAMS">Sign In</button>
+
+           <!-- 👇 Add this Sign-Up redirect -->
+        <div class="signup-link">
+  <p>
+    Don’t have an account?
+    <button 
+      type="button" 
+      class="btn" 
+      aria-label="Sign up for ITAMS" 
+      id = "signup"
+      onclick="window.location.href='signup.html'">
+      Sign Up
+    </button>
+  </p>
+</div>
+
+      </section>
         </form>
       </section>
 
@@ -97,5 +114,8 @@
       </div>
     </nav>
   </footer>
+  <script src="js/login.js"></script>
+
 </body>
+
 </html>

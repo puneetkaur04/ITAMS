@@ -63,6 +63,18 @@ body{
 }
 .back:hover{text-decoration:underline}
 
+#signup{
+  width: 55%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
 .rail-body{
   align-self:start;
   padding-top:2rem;
@@ -93,6 +105,21 @@ input:focus{
   box-shadow:0 0 0 3px rgba(10,132,255,.25);
   background:#fff;
 }
+
+.form .field input[type="email"],
+.form .field input[type="password-signup"],
+.form .field input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #ccc;
+  border-radius: 999px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
 
 .btn{
   height:48px;
